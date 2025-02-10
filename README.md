@@ -1,53 +1,53 @@
-# Documentación de Aplicación con PySide6
+# Documentar Aplicación - HolaMundo en PySide6
 
-## Introducción
-Este proyecto es una aplicación simple de "Hola Mundo" utilizando PySide6. La documentación proporciona instrucciones detalladas para la instalación y ejecución en Windows y Linux.
+## Instalación de Python3
+### Windows:
+- Descarga Python desde [python.org](https://www.python.org/downloads/).
+- Verifica la instalación con:
+  ```sh
+  python --version
+  ```
 
-## Prerrequisitos
-Asegúrate de tener instalado **Python 3** en tu sistema.
-Puedes verificarlo con el siguiente comando:
-
-```sh
-python --version  # o python3 --version en Linux
-```
-
-Si no está instalado, descárgalo desde [python.org](https://www.python.org/downloads/).
-
----
-
-## Instalación y Configuración
-
-### 1. Instalación de Python y pip
-**Windows:**
-- Descarga e instala Python desde [python.org](https://www.python.org/downloads/).
-- Asegúrate de marcar la opción **"Add Python to PATH"** durante la instalación.
-- Verifica la instalación:
-
-```sh
-python --version
-pip --version
-```
-
-**Linux:**
-- Instala Python y pip con:
-
-```sh
-sudo apt update
-sudo apt install python3 python3-pip
-```
+### Linux:
+- Instala Python con:
+  ```sh
+  sudo apt update
+  sudo apt install python3
+  ```
+- Verifica la instalación con:
+  ```sh
+  python3 --version
+  ```
 
 ---
 
-### 2. Creación y Activación del Entorno Virtual
-Es recomendable usar un entorno virtual para gestionar las dependencias del proyecto.
+## Instalación y Activación de pip
+### Windows:
+- Pip ya viene incluido con Python, para asegurarte de que esté actualizado usaremos el comando:
+  ```sh
+  python -m pip install --upgrade pip
+  ```
 
-**Windows:**
+### Linux:
+- Instalación de pip:
+  ```sh
+  sudo apt install python3-pip
+  ```
+- Verificamos la instalación con:
+  ```sh
+  pip3 --version
+  ```
+
+---
+
+## Creación y Activación de Entorno Virtual
+### Windows:
 ```sh
 python -m venv venv
 venv\Scripts\activate
 ```
 
-**Linux:**
+### Linux:
 ```sh
 python3 -m venv venv
 source venv/bin/activate
@@ -55,16 +55,15 @@ source venv/bin/activate
 
 ---
 
-### 3. Instalación de Dependencias
-Instala PySide6 dentro del entorno virtual:
-
+## Instalación de Dependencias
+Con el entorno virtual activado, instala PySide6:
 ```sh
 pip install PySide6
 ```
 
 ---
 
-### 4. Creación del Archivo `main.py`
+## Ejecución de la Aplicación
 Crea un archivo `main.py` y copia el siguiente código:
 
 ```python
@@ -77,30 +76,7 @@ label.show()
 sys.exit(app.exec())
 ```
 
----
-
-### 5. Ejecución de la Aplicación
-Para ejecutar la aplicación, usa el siguiente comando dentro del entorno virtual:
-
+Ejecuta la aplicación con:
 ```sh
 python main.py
 ```
-
----
-
-## Notas Adicionales
-- Si tienes problemas con PySide6, intenta actualizar `pip`:
-
-```sh
-pip install --upgrade pip
-```
-
-- Para salir del entorno virtual:
-  - **Windows:** `deactivate`
-  - **Linux:** `deactivate`
-
----
-
-## Licencia
-Este proyecto se distribuye bajo la licencia MIT.
-
