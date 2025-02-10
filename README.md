@@ -19,7 +19,7 @@
   python3 --version
   ```
 
----
+
 
 ## Instalación y Activación de pip
 ### Windows:
@@ -38,7 +38,7 @@
   pip3 --version
   ```
 
----
+
 
 ## Creación y Activación de Entorno Virtual
 ### Windows:
@@ -53,7 +53,7 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
----
+
 
 ## Instalación de Dependencias
 Con el entorno virtual activado, instala PySide6:
@@ -61,7 +61,7 @@ Con el entorno virtual activado, instala PySide6:
 pip install PySide6
 ```
 
----
+
 
 ## Ejecución de la Aplicación
 Crea un archivo `main.py` y copia el siguiente código:
